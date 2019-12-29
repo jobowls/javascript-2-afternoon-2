@@ -17,9 +17,9 @@ var arr = [10,20,30];
   Return the first item in the given array.
 */
 
-//Code Here
-
-
+function first(arr){
+  return arr[0];
+}
 
 ////////// PROBLEM 2 //////////
 
@@ -32,9 +32,9 @@ var arr = [40,50,60];
   Return the last item in the given array.
 */
 
-//Code Here
-
-
+function last(arr){
+  return arr[arr.length - 1];
+}
 
 ////////// PROBLEM 3 //////////
 
@@ -47,9 +47,11 @@ var family = ['Tyler', 'Jordyn', 'Ryan', 'Chelsey', 'Ireland'];
   Loop through the given array and alert every item in the array.
 */
 
-//Code Here
-
-
+function looper(family){
+  for(i = 0; i < family.length; i++){
+    alert(family[i])
+  }
+}
 
 ////////// PROBLEM 4 //////////
 
@@ -62,9 +64,11 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
   Loop backwards, starting at the end of the letters array, alerting every item in the array.
 */
 
-//Code Here
-
-
+function reversedLooper(letters){
+  for (i = letters.length - 1; i >= 0; i--){
+    alert(letters[i]);
+  }
+}
 
 ////////// PROBLEM 5 //////////
 
@@ -72,27 +76,15 @@ var letters = ['A', 'B', 'C', 'D', 'E'];
 var nums = [1,2,3,6,22,98,45,23,22,12];
 // Do not edit the code above.
 
-/*
-  Write a function named evenFinder that is given nums as it's only argument.
-  Return an array that contains the even numbers from the nums array.
-*/
+// Write a function named evenFinder that is given nums as it's only argument.
+// Return an array that contains the even numbers from the nums array.
 
-//Code Here
-
-
-
-
-
-
+function evenFinder(nums){
+  return nums.filter(value => value % 2 === 0)
+}
 
 /////////////////////// EXTRA PRACTICE PROBLEMS BELOW ////////////////////
 ////////// MOVE ONTO NEXT SECTION BEFORE WORKING ON THESE ////////////////
-
-
-
-
-
-
 
 ////////// PROBLEM 6 //////////
 
@@ -105,10 +97,6 @@ var numbersArray = [1,2,34,54,55,34,32,11,19,17,54,66,13];
   Have divider return an array with the first item in the array being the evens array (all the even values from numbersArray)
   and the second item in the array being the odds array (all the odd values from numbersArray).
 */
-
-//Code Here
-
-
 
 ////////// PROBLEM 7 //////////
 
@@ -159,8 +147,6 @@ var myGroceryList = ['chips', 'pizza', 'hotpockets', 'MtnDew', 'corndogs'];
 
 //Code Here
 
-
-
 ////////// PROBLEM 9 //////////
 
 /*
@@ -209,8 +195,6 @@ for(var i = 0; i < num2; i++){
 */
 
 //Code Here
-
-
 
 /*
   As a continuation of the previous problem, write another function called 'both'.
@@ -263,8 +247,6 @@ var colt = {
 
 //Code Here
 
-
-
 /*
   Now let's say Cahlan has to take a leave of absence.
   Loop through your devMountainEmployees until you find cahlan, then remove him from the array.
@@ -272,10 +254,7 @@ var colt = {
 
 //Code Here
 
-
-
 ////////// PROBLEM 13 //////////
-
 
 /*
   A very clean way to pass around large LISTS (arrays) of COLLECTIONS (objects) of data is to have an array full of objects. 
@@ -303,10 +282,6 @@ var user1 = {
 };
 // Do not edit the code above.
 
-//Code Here
-
-
-
 /*
   Now you have a very common data structure. 
   Twitter is a good use case.
@@ -316,10 +291,6 @@ var user1 = {
   Loop through your array of objects until you find Mark's account (use his email, mark.mciver@devmounta.in, to find him).
   Once you find the array index he's located in, delete him from the array.
 */
-
-//Code Here
-
-
 
 /*
   The activity we just did is very much how data works in 'the real world'.
